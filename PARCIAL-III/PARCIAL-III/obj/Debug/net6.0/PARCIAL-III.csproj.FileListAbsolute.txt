@@ -1,0 +1,14 @@
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\bin\Debug\net6.0\PARCIAL-III.exe
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\bin\Debug\net6.0\PARCIAL-III.deps.json
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\bin\Debug\net6.0\PARCIAL-III.runtimeconfig.json
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\bin\Debug\net6.0\PARCIAL-III.dll
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\bin\Debug\net6.0\PARCIAL-III.pdb
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\obj\Debug\net6.0\PARCIAL-III.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\obj\Debug\net6.0\PARCIAL-III.AssemblyInfoInputs.cache
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\obj\Debug\net6.0\PARCIAL-III.AssemblyInfo.cs
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\obj\Debug\net6.0\PARCIAL-III.csproj.CoreCompileInputs.cache
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\obj\Debug\net6.0\PARCIAL-III.dll
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\obj\Debug\net6.0\refint\PARCIAL-III.dll
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\obj\Debug\net6.0\PARCIAL-III.pdb
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\obj\Debug\net6.0\PARCIAL-III.genruntimeconfig.cache
+C:\Users\beral\OneDrive\Documentos\GitHub\Parcial-III\PARCIAL-III\PARCIAL-III\obj\Debug\net6.0\ref\PARCIAL-III.dll
