@@ -45,7 +45,7 @@ while (vali1 == true)
                     promedios.PARCIAL2 = double.Parse(Console.ReadLine());
                     Console.Write("\nIngresa la nota del tercer parcial: ");
                     promedios.PARCIAL3 = double.Parse(Console.ReadLine());
-                    nota.laboratorio = logi.CalcularLab(promedios);
+                    nota.laboratorios = logi.CalcularLab(promedios);
                     nota.parciales = logi.CalcularParcial(promedios);
                     nota.final = logi.CalcularNotaFinal(promedios);
                     db.CreateNota(nota);
@@ -65,7 +65,7 @@ while (vali1 == true)
                     Console.WriteLine(new string('-', idWidth + nomWidth + labWidth + parWidth + finalWidth + 8));
                     foreach (var i in db.Viewnota())
                     {
-                        Console.WriteLine($"{i.id.ToString().PadRight(idWidth)} {i.estudiante.PadRight(nomWidth)} {i.laboratorio.ToString().PadRight(labWidth)} {i.parciales.ToString().PadRight(parWidth)} {i.final.ToString().PadRight(finalWidth)}   |");
+                        Console.WriteLine($"{i.id.ToString().PadRight(idWidth)} {i.estudiante.PadRight(nomWidth)} {i.laboratorios.ToString().PadRight(labWidth)} {i.parciales.ToString().PadRight(parWidth)} {i.final.ToString().PadRight(finalWidth)}   |");
                     }
                     Console.Write("\nIngrese el codigo que desea actualizar: ");
                     var buscar = db.notasindivi(int.Parse(Console.ReadLine()));
@@ -100,8 +100,8 @@ Ingresa el campo que  actualizara
                                 promedios.LAB2 = double.Parse(Console.ReadLine());
                                 Console.Write("\nIngresa la nota del tercer laboratorio: ");
                                 promedios.LAB3 = double.Parse(Console.ReadLine());
-                                buscar.laboratorio = logi.CalcularLab(promedios);
-                                buscar.final = Math.Round(buscar.parciales + buscar.laboratorio, 2);
+                                buscar.laboratorios = logi.CalcularLab(promedios);
+                                buscar.final = Math.Round(buscar.parciales + buscar.laboratorios, 2);
                                 break;
 
                             case 3:
@@ -112,7 +112,7 @@ Ingresa el campo que  actualizara
                                 Console.Write("\nIngresa la nota del tercer parcial: ");
                                 promedios.PARCIAL3 = double.Parse(Console.ReadLine());
                                 buscar.parciales = logi.CalcularParcial(promedios);
-                                buscar.final = Math.Round(buscar.parciales + buscar.laboratorio, 2);
+                                buscar.final = Math.Round(buscar.parciales + buscar.laboratorios, 2);
                                 break;
 
                             case 4:
@@ -128,7 +128,7 @@ Ingresa el campo que  actualizara
                                 promedios.PARCIAL2 = double.Parse(Console.ReadLine());
                                 Console.Write("\nIngresa la nota del tercer parcial: ");
                                 promedios.PARCIAL3 = double.Parse(Console.ReadLine());
-                                buscar.laboratorio = logi.CalcularLab(promedios);
+                                buscar.laboratorios = logi.CalcularLab(promedios);
                                 buscar.parciales = logi.CalcularParcial(promedios);
                                 buscar.final = logi.CalcularNotaFinal(promedios);
                                 break;
@@ -152,7 +152,7 @@ Ingresa el campo que  actualizara
 
                     foreach (var i in db.Viewnota())
                     {
-                        Console.WriteLine($"{i.id.ToString().PadRight(idWidth)} {i.estudiante.PadRight(nomWidth)} {i.laboratorio.ToString().PadRight(labWidth)} {i.parciales.ToString().PadRight(parWidth)} {i.final.ToString().PadRight(finalWidth)}   |");
+                        Console.WriteLine($"{i.id.ToString().PadRight(idWidth)} {i.estudiante.PadRight(nomWidth)} {i.laboratorios.ToString().PadRight(labWidth)} {i.parciales.ToString().PadRight(parWidth)} {i.final.ToString().PadRight(finalWidth)}   |");
                     }
                 }
                 catch (Exception ex)
@@ -171,7 +171,7 @@ Ingresa el campo que  actualizara
 
                     foreach (var i in db.Viewnota())
                     {
-                        Console.WriteLine($"{i.id.ToString().PadRight(idWidth)} {i.estudiante.PadRight(nomWidth)} {i.laboratorio.ToString().PadRight(labWidth)} {i.parciales.ToString().PadRight(parWidth)} {i.final.ToString().PadRight(finalWidth)}   |");
+                        Console.WriteLine($"{i.id.ToString().PadRight(idWidth)} {i.estudiante.PadRight(nomWidth)} {i.laboratorios.ToString().PadRight(labWidth)} {i.parciales.ToString().PadRight(parWidth)} {i.final.ToString().PadRight(finalWidth)}   |");
                     }
                     Console.Write("\nIngresa el código del registro a eliminar: ");
 

@@ -30,7 +30,7 @@ namespace PARCIAL_III_EJE2.DAO
                 notas notas = new notas();
                 notas.estudiante = nota.estudiante;
                 notas.parciales = nota.parciales;
-                notas.laboratorio = nota.laboratorio;
+                notas.laboratorios = nota.laboratorios;
                 notas.final = nota.final;
 
                 db.Add(notas);
@@ -39,9 +39,9 @@ namespace PARCIAL_III_EJE2.DAO
                 Console.WriteLine($"La nota de {notas.estudiante} ha sido guardada");
 
             }
-            catch (Exception EX)
+            catch (Exception ex)
             {
-                Console.WriteLine($"Error al guardar \nDetalles: {EX}");
+                Console.WriteLine($"Error al guardar \nDetalles: {ex}");
 
             }
         }
@@ -70,7 +70,7 @@ namespace PARCIAL_III_EJE2.DAO
 
                     else if (Lector == 3)
                     {
-                        buscar.laboratorio = nota.laboratorio;
+                        buscar.laboratorios = nota.laboratorios;
                     }
 
                     else if (Lector == 4)
