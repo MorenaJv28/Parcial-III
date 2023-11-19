@@ -46,7 +46,7 @@ namespace PARCIAL_III_EJE2.DAO
             }
         }
 
-        public void UpdateNota(notas nota, int L)
+        public void UpdateNota(notas nota, int Lector)
         {
             try
             {
@@ -58,22 +58,22 @@ namespace PARCIAL_III_EJE2.DAO
 
                 else
                 {
-                    if (L == 1)
+                    if (Lector == 1)
                     {
                         buscar.estudiante = nota.estudiante;
                     }
 
-                    else if (L == 2)
+                    else if (Lector == 2)
                     {
                         buscar.parciales = nota.parciales;
                     }
 
-                    else if (L == 3)
+                    else if (Lector == 3)
                     {
                         buscar.laboratorio = nota.laboratorio;
                     }
 
-                    else if (L == 4)
+                    else if (Lector == 4)
                     {
                         buscar.final = nota.final;
                     }
@@ -81,14 +81,14 @@ namespace PARCIAL_III_EJE2.DAO
                     db.SaveChanges();
                 }
             }
-            catch (Exception EX)
+            catch (Exception ex)
             {
-                Console.WriteLine($"Error al actualizar \nDetalles: {EX}");
+                Console.WriteLine($"Error al actualizar \nDetalles: {ex}");
 
             }
 
         }
-        public void DeleteNota(int id)
+        public string DeleteNota( int id)
         {
             var buscar = notasindivi(id);
 
@@ -98,24 +98,26 @@ namespace PARCIAL_III_EJE2.DAO
             }
             else
             {
-                string R;
+                string respuesta;
                 do
                 {
                     Console.WriteLine("¿Desea eliminar este estudiante? (Si/No)");
-                    R = Console.ReadLine();
+                    respuesta = Console.ReadLine();
 
-                    if (R.Equals("Si", StringComparison.OrdinalIgnoreCase))
+                    if (respuesta.Equals("Si", StringComparison.OrdinalIgnoreCase))
                     {
                         db.notas.Remove(buscar);
                         db.SaveChanges();
                         Console.WriteLine("\nEliminación exitosa");
                     }
-                    else if (!R.Equals("No", StringComparison.OrdinalIgnoreCase)) 
+                    else if (!respuesta.Equals("No", StringComparison.OrdinalIgnoreCase)) 
                     {
                         Console.WriteLine("Respuesta no válida. Ingrese 'Si' para eliminar o 'No' para cancelar.");
                     }
-                } while (!R.Equals("Si", StringComparison.OrdinalIgnoreCase) && !R.Equals("No", StringComparison.OrdinalIgnoreCase));
+                } while (!respuesta.Equals("Si", StringComparison.OrdinalIgnoreCase) && !respuesta.Equals("No", StringComparison.OrdinalIgnoreCase));
             }
+            return string.Empty;
+
         }
     }
 }
